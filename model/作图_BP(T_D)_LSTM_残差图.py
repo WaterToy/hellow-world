@@ -189,7 +189,7 @@ mpl.rcParams['font.sans-serif'] = ['SimHei']
 fig = plt.figure()
 ax1 = fig.add_subplot(211)
 ax1.plot(result_hg.ds[0:850], result_hg.y[0:850], '-', lw=1.5, label=u'实际结果')
-ax1.plot(result_hg.ds[0:850], result_hg.y_hg[0:850], 'g--', lw=1.5, label=u'预测结果')
+ax1.plot(result_hg.ds[0:850], result_hg.y_hg[0:850], 'g--', lw=0.8, label=u'预测结果')
 plt.title(u"(a) BPNN预测结果")
 
 ax2 = fig.add_subplot(212)
