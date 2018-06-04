@@ -33,7 +33,7 @@ def series_to_supervised(data, n_in=1, n_out=1, dropnan=True):
     return agg
 
 # 读取数据集导入数据
-dataframe = pd.read_excel('D:\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 df = dataframe[['ave_temp', 'is_holiday', 'gas_use']]
 # 异常数据直接剔除
 df.gas_use[601] = (df.gas_use[600]+df.gas_use[602])/2

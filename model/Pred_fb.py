@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 '''
 # 回归预测部分
 # 读取数据集导入数据
-df = pd.read_excel('F:\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 df_not_holiday = df.loc[df['is_holiday']==0]
 datasets_temp = df_not_holiday.ave_temp
 datasets_gas_use = df_not_holiday.gas_use

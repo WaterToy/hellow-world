@@ -19,7 +19,7 @@ def linear_mod(X_parameters, Y_parameters, predict_value):
 	return predictions
 
 # 读取数据集导入数据
-df = pd.read_excel('D:\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 datasets_X = df.ave_temp
 datasets_Y = df.gas_use
 test_forecast = df.ave_temp

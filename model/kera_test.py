@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 seed = 7
 np.random.seed(seed)
 # 导入数据
-df = pd.read_excel('D:\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 df_date_time = []
 for i in range(len(df.date_time)):
     df_date_time.append(df.date_time[i]-datetime.datetime(2015,1,1))

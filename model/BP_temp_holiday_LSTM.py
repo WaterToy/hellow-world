@@ -100,7 +100,7 @@ LSTM_pred_days = 15     # 预测的天数
 # 设置plt格式
 sns.set_style("white")
 # 读取数据集导入数据
-df = pd.read_excel('D:\\Mission\\云同步\\学习\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 # 异常数据直接剔除
 df.gas_use[601] = (df.gas_use[600]+df.gas_use[602])/2
 df.gas_use[614] = (df.gas_use[613]+df.gas_use[615])/2

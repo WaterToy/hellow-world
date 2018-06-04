@@ -17,7 +17,7 @@ from keras.models import Sequential
 sns.set_style("white")  
 # 导入输入、输出值
 # 读取数据集导入数据
-df = pd.read_excel('D:\\Mission\\云同步\\学习\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 tmp = df.loc[df.is_holiday==0][['date_time', 'is_holiday', 'gas_use', 'high_temp', 'low_temp', 'ave_temp']]
 df_no_holiday = tmp.loc[df.gas_use!=36391.8].loc[df.gas_use!=3261750.0]
 x_data = df_no_holiday.ave_temp

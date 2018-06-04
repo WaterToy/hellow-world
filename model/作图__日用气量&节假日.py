@@ -14,7 +14,7 @@ mpl.rcParams['axes.unicode_minus']=False #用来正常显示负号
 
 # 导入输入、输出值
 # 读取数据集导入数据
-df = pd.read_excel('D:\\Mission\\云同步\\学习\\20180124_小论文\\20171123数据整理\武汉\居&商_武汉20150101~20170823.xlsx')
+df = pd.read_excel('.\\data\\gas_load.xlsx')
 df = df.loc[0:850]
 x = df.date_time
 y1 = df.gas_use
